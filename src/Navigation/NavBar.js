@@ -11,7 +11,7 @@ export function NavBar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <NavDropdown title="More" id="basic-nav-dropdown">
           <NavDropdown.Item as={Link} to="/home">
-            Home
+            Message
           </NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/counter">
             Counter
