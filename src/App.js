@@ -23,7 +23,7 @@ export default function App() {
           <Display />
         </Route>
         <Route path="/">
-          <h1 className="bg-warning" style={{ height: "100vh" }}>
+          <h1 className="bg-secondary" style={{ height: "100vh" }}>
             Welcome To Hopepage
           </h1>
         </Route>

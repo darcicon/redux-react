@@ -1,4 +1,4 @@
-import { Nav, Navbar } from "react-bootstrap";
+import { Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export function NavBar() {
@@ -9,18 +9,18 @@ export function NavBar() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link as={Link} to="/home">
+        <NavDropdown title="More" id="basic-nav-dropdown">
+          <NavDropdown.Item as={Link} to="/home">
             Home
-          </Nav.Link>
-
-          <Nav.Link as={Link} to="/counter">
+          </NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/counter">
             Counter
-          </Nav.Link>
-          <Nav.Link as={Link} to="/display">
+          </NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/display">
             Display
-          </Nav.Link>
-        </Nav>
+          </NavDropdown.Item>
+          <NavDropdown.Divider />
+        </NavDropdown>
       </Navbar.Collapse>
     </Navbar>
   );

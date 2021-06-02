@@ -15,7 +15,8 @@ export function Home() {
 
   return (
     <div>
-      <div className="d-flex mt-2 mx-4">
+      <h1 className="p-2 text-warning">Send Messages</h1>
+      <div className="d-flex p-2">
         <input
           type="text"
           value={tinput}

@@ -12,6 +12,9 @@ function AppReducer(state = initState, action) {
       const newList = [action.payload, ...state.list];
       return { ...state, list: newList };
 
+    case "INC":
+      return { ...state, counter: state.counter + 1 };
+
     default:
       return state;
   }
