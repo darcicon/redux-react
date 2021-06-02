@@ -7,7 +7,7 @@ export function Counter() {
   const inc = () => dispatch({ type: "INC" });
 
   return (
-    <div className="mx-4">
+    <div className="mx-4 ">
       <div className="alert alert-danger mt-2 text-left">
         Likes {state.counter}
       </div>
@@ -16,7 +16,7 @@ export function Counter() {
         type="button"
         value="Like"
         onClick={() => inc()}
-        className="btn btn-secondary btn-lg w-25"
+        className="btn btn-dark btn-lg w-15"
       />
     </div>
   );

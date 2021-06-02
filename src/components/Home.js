@@ -14,27 +14,27 @@ export function Home() {
   };
 
   return (
-    <div>
+    <div className="bg-secondary" style={{ height: "100vh" }}>
       <h1 className="p-2 text-warning">Send Messages</h1>
       <div className="d-flex p-2">
         <input
           type="text"
           value={tinput}
           onChange={(e) => update(e)}
-          className="form-control w-75"
+          className="form-control w-75 p-2"
           placeholder="Type Something"
         />
         <input
           type="button"
           onClick={() => post()}
           value="Send"
-          className="w-15 btn btn-secondary"
+          className="w-15 btn btn-dark"
         />
       </div>
 
-      <div className="mx-4 mt-4">
+      <div className="mx-4 mt-4 p-2 fs-1">
         {state.list.map((item, index) => (
-          <h4 key={index} className="text-secondary">
+          <h4 key={index} className="text-light">
             {item}
           </h4>
         ))}
